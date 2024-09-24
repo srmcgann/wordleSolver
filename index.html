@@ -203,7 +203,7 @@
         KnownLetters.value = Placement.value = Exclude.value = ''
         KnownLetters.focus()
         let req = new XMLHttpRequest()
-        req.open('GET', '/wordle.php?letters='+letters+'&placement='+placement+'&exclude='+exclude, true)
+        req.open('GET', 'https://whr.rf.gd/wordle.php?letters='+letters+'&placement='+placement+'&exclude='+exclude, true)
 
         resultDiv.innerHTML = '<span style="color: #fff;">working...</span>'
         res = []
